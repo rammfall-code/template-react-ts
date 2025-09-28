@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest --run",
-    "format": "prettier src/index.html --check",
+    "format": "prettier src/**/*.* --check",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
