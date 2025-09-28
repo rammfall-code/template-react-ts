@@ -1,3 +1,5 @@
+// @ts-check
+
 import globals from 'globals';
 import pluginJs from '@eslint/js';
 import { defineConfig } from 'eslint/config';
