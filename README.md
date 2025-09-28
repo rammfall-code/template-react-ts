@@ -1,1 +1,1 @@
-# template-basic
+# template-react-ts
