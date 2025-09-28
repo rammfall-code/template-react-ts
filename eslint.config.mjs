@@ -5,14 +5,17 @@ import pluginJs from '@eslint/js';
 import { defineConfig } from 'eslint/config';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginPrettier from 'eslint-plugin-prettier/recommended';
-import tseslint from 'typescript-eslint';
+import tsEslint from 'typescript-eslint';
 
 export default defineConfig([
-  tseslint.configs.recommended,
+  tsEslint.configs.recommended,
   {
     basePath: './src',
     languageOptions: {
-      globals: globals.browser,
+      globals: {
+        ...globals.node,
+        ...globals.browser,
+      },
     },
     rules: {
       'array-callback-return': 'error',
