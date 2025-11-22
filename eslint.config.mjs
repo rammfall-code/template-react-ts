@@ -10,6 +10,12 @@ import tsEslint from 'typescript-eslint';
 export default defineConfig([
   tsEslint.configs.recommended,
   {
+    files: ['**/*.test.ts', '**/*.test.tsx'],
+    rules: {
+      'max-nested-callbacks': 'off',
+    },
+  },
+  {
     basePath: './src',
     languageOptions: {
       globals: {
